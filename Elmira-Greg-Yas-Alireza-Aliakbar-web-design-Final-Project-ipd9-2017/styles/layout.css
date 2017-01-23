@@ -1,0 +1,76 @@
+@charset "utf-8";
+/* CSS Document */
+main{
+	background-attachment: fixed;
+    background-image:url(../Images/contactbg.jpg);
+	background-size:cover;
+	background-color: hsla(0,0%,100%,0.30);
+    background-repeat: no-repeat;
+	padding:0;
+	margin:0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    
+}
+#header{
+		margin:0;
+		padding:10px;
+		height:140px;
+		background-color: #949494;
+		border-bottom:4px solid #F90;
+	}
+	#header img{
+		width:350px;
+		height:120px;
+		float:left;
+	}
+	#header h1{
+		float:left;
+		color:white;
+		margin-top:10px;
+		margin-left:20px;
+		font: bold 3.5em 'Holtwood One SC';
+    	text-shadow: 0 1px 0 #ccc,
+                 0 2px 0 #c5c5c5,
+                 0 3px 0 #bbb,
+                 0 4px 0 #b5b5b5,
+                 0 5px 0 #aaa,
+                 0 6px 0 #a5a5a5,
+                 0 7px 3px rgba(0, 0, 0, 0.3),
+                 0 10px 10px rgba(0, 0, 0, 0.2),
+                 0 10px 20px rgba(0, 0, 0, 0.15),
+                 0 20px 20px rgba(0, 0, 0, 0.1);
+    	color: rgba(255, 255, 255, 0.8);
+		padding-bottom:11px;
+	}
+	#nav{
+		margin:0;
+		padding:0;
+		background-color:#D56A00;
+		font-size:1.5em;
+	}
+	#nav a{
+		color:white;
+	}
+	#nav .dropdown-menu, #nav a:hover, #nav a:active, #nav a:focus{
+		background-color:#D56A00;
+		color:#FF0;
+	}
+	.btn{
+		height:34px;
+	}
+	footer{
+		text-align:center;
+	}
+	footer a{
+		color:#CCC;
+		display:inline-block;
+		padding-left:10px;
+		text-decoration:none;
+	}
+	footer a:hover{
+		text-decoration:none;
+	}
+	
+	

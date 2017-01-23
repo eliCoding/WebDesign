@@ -1,0 +1,54 @@
+﻿@charset "utf-8";
+/* CSS Document for About page */
+/* Developed by: Gregory Torakis */
+/* Date: January 16, 2017 */
+
+.icon {
+		color:rgba(153,153,153,1);
+	}
+/*	
+.btn {
+   background-color:cornflowerblue;
+   height:34px;
+}
+*/
+	
+.well {
+    background-color: rgba(255,255,204,1);
+}
+
+.cmn-t-pulse {
+   padding-bottom:5px;
+   animation: pulse 3s ease infinite;
+}
+
+.cmn-t-pulse:hover {
+   color: black;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.foo img:last-child {
+	display:none
+}
+
+.foo:hover img:first-child {
+	display:none
+}
+
+.foo:hover img:last-child {
+	display:inline-block
+}
+

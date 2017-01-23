@@ -1,0 +1,201 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width , initial-scale=1" />
+<!-- CSS Links -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Holtwood+One+SC" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">
+<link type="text/css" href="styles/bootstrap.min.css" rel="stylesheet" />
+    <link type="text/css" rel="stylesheet" href="styles/layout_mq.css" />
+<link type="text/css" rel="stylesheet" href="styles/signup.css"/>
+<!-- Scripts -->
+<script type="text/javascript" src="scripts/signup.js"></script> 
+<!-- Title -->
+<title>Melody Center Sign Up</title>
+</head>
+
+<body>
+	<header id="header"> 
+		<img src="Images/1.gif" alt="Logo af school" id="logo"/>
+		<h1> Melody Art Music Center </h1>
+	</header>
+	<nav class="navbar  navbar-default" id="nav">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="about.html">About</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Programs and Fees<b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li class="dropdown-header"><a href="https://www.musictheory.net/lessons">Online Classes</a></li>
+                            <li class="divider"></li>
+                            <li class="dropdown-header"><a href="attending.html">Attending Classes</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contact</a>
+                    </li>
+                    <li>
+                      <a href="signup.html">SignUp <i class="fa fa-user"></i></a>
+                    </li>
+                </ul>
+                <form class="nav navbar-form navbar-right">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search">
+                        <div class="input-group-btn">
+                            <button class="btn btn-default" type="submit">
+                                <i class="fa fa-search"></i>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+          </div>
+    </nav>
+	<main class="container">
+        <form id="signup" name="signup" method="post" action="registration.html" onSubmit="return validateForm();" onreset="location.reload();">
+            <table>
+				<caption>To be a MEMBER, Please fill up this form</caption>
+                <tr>
+                    <th><label for="fname">Name</label></th>
+                    <td>
+                        <input type="text" id="fname" name="fname" size="20"/>
+                        <input type="text" id="lname" name="lname" size="20"/>
+                        <br />
+                        <h6 id="Hfname">First Name</h6>
+                        <h6 id="Hlname">Last Name</h6>
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        <label for="stNum">Address</label>
+                    </th>
+                    <td>
+                        <input type="text" id="stNum" name="stNum" size="5" />
+                        <input type="text" id="stName" name="stName" size="20" />
+                        <br />
+                        <h6 id="HstreetNo">Street No.</h6>
+                        <h6 id="HstreetName">Street Name</h6>
+                        <br />
+                        <input type="text" id="stLine2" name="stLine2" size="30" />
+                        <br />
+                        <h6 id="HstreetLine">Street Address Line2</h6>
+                        <br />
+                        <input type="text" id="city" name="city" size="20" />
+                        <input type="text" id="state" name="state" size="20" />
+                        <br />
+                        <h6 id="Hcity">City</h6>
+                        <h6 id="Hstate">State/province</h6>
+                        <br />
+                        <input type="text" id="postal" name="postal" size="5" /> - 
+                        <input type="text" id="country" name="country" size="20" />
+                        <br />
+                        <h6 id="HpostalCode">Postal Code</h6>
+                        <h6 id="Hcountry">Country</h6>
+                    </td>
+                </tr>
+                <tr>
+                    <th><label for="email">E-mail</label></th>
+                    <td>
+                        <input type="email" id="email" name="email" size="30"/>
+                        <br />
+                        <h6 id="Hemail">ex:myname@example.com</h6>
+                    </td>
+                </tr>
+                <tr>
+                    <th><label for="AreaCode">home/Cell Phone</label></th>
+                    <td>
+                        <input type="text" id="AreaCode" name="AreaCode" size="5" /> -                       
+                        <input type="text" id="phoneNo" name="phoneNo" size="10"/>
+                        <br />
+                        <h6 id="HareaCode">Area Code</h6>
+                        <h6 id="Hphone">Phone Number</h6>
+                    </td>
+                </tr>
+                <tr>
+                    <th><label for="username">Choose a username</label></th>
+                    <td>
+                        <input type="text" id="username" name="username" size="30" />
+                        <br />
+                        <p>
+                            The user name must be at least 7 characters. it can be<br />
+                            mixed up of numbers, Alphabets &amp; special Characters.
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <th><label for="password">Choose a Password</label></th>
+                    <td>
+                        <input type="password" id="password" name="password" size="30" />
+                        <br />
+                        <p>
+                            The Password must be at least 7 characters. it can be<br />
+                            mixed up of numbers &amp; Alphabets but not special Characters.
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <th><label for="confpassword">Confirm a Password</label></th>
+                    <td>
+                        <input type="password" id="confpassword" name="confpassword" size="30" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <br />
+                    </td>
+                    <td>
+                        <br />
+                        <input type="submit" class="btn-primary" value="Apply for Membership"/>
+                        <input type="reset" value="Clear the form" class="btn-warning" />
+                    </td>
+                </tr>
+            </table>
+        </form>
+		<section>
+			<figure>
+				<img src="Images/drum.png" alt="drum set" />
+			</figure>
+		</section>
+	</main>
+	<footer style="text-align:center" class="navbar navbar-inverse">
+		<div class="collapse navbar-collapse">
+             <a href="https://www.long-mcquade.com/location/Quebec/Montreal/">
+    Online Music Store Montreal
+</a> |
+     <a href="about.html">About Us</a> |
+	 <a href="contact.html">Contact Us</a> |
+	 <a href="privacy_policy.html"> Privacy Policy</a> |
+	 <a href="cancellation_policy.html"> Cancellation Policy</a>
+</div>
+        <div class="navbar-text pull-right">
+            <div>&copy; 2017, Melody Art Music Center</div>
+        </div>
+        <div class="navbar-text pull-left">
+            <a href="http://www.facebook.com" title="facebook"><i class="fa fa-facebook-official fa-3x" aria-hidden="true"></i></a>
+            <a href="https://www.instagram.com" title="instagram"><i class="fa fa-instagram fa-3x" aria-hidden="true"></i></a>
+            <a href="https://www.youtube.com" title="youtube"><i class="fa fa-youtube fa-3x" aria-hidden="true"></i></a>
+			<a href="https://www.twitter.com" title="twitter"><i class="fa fa-twitter fa-3x" aria-hidden="true"></i></a>
+        </div>
+    </footer>
+<!-- jQuery -->
+<script src="scripts/jquery.js"></script>
+<!-- Bootstrap Core JavaScript -->
+<script src="scripts/bootstrap.min.js"></script>
+</body>
+</html>
