@@ -1,0 +1,172 @@
+@charset "utf-8";
+/* Tozai Hotel Tablet CSS document */
+
+@media screen and (min-width: 700px) {
+	@font-face {
+		src:url("");
+	}
+}
+
+
+#wrapper {
+	width:100%;
+	max-width:700px;
+	background-image:url("../images/basin_bg_tab.jpg"); 
+	background-size:contain;
+}
+
+
+#header h1 {
+	font-size:58px;
+	padding:0;
+	padding-top:10px;
+	text-align:center;
+	margin-bottom:0;
+}
+
+
+/* setting the main navigation */
+#nav ul {
+	width:660px;
+	margin-right:auto;
+	margin-left:auto;
+}
+
+#nav ul li a {
+	width:120px;
+	padding:10px 5px;
+}
+
+/*setting the main content on index page */
+#hero {
+	margin-right:10px;
+	margin-left:10px;
+	padding-right:15px;
+	padding-left:15px;
+	width:auto;
+	height:auto;
+	min-height:279px;
+	background-image:url("../images/exterior_tab.jpg");
+	background-position:265px;
+}
+
+#hero p {
+	padding-right:410px;
+}
+
+#hero h2 {
+	padding-right:0;
+}
+
+
+/* content containers on other pages */
+
+.content-wide {
+	margin-right:15px;
+	margin-left:15px;
+	padding-right:10px;
+	padding-left:10px;
+}
+
+
+.img-large {
+	width:450px;
+}
+
+.content-medium {
+	float:none;
+	width:auto;
+}
+
+.aside-bar {
+	margin-left:auto;
+}
+
+.content-medium , .aside-bar {
+	margin-right:15px;
+	margin-left:15px;
+	padding-right:10px;
+	padding-left:10px;
+}
+
+/* background images for individual pages */
+#sake {
+	background-image:url("../images/sake_tab.jpg");
+	background-repeat:no-repeat;
+	background-position:440px bottom;
+}
+
+#sake p {
+	max-width:400px;
+}
+
+#blossom h3 + p {
+	padding-right:90px;
+}
+
+/* alternate rules for screen widths in the 
+range 401-680px */
+@media screen and (min-width:401px) 
+	and (max-width:680px) {
+		#header h1 {
+			font-size:40px;
+			padding-top:7px;
+		}
+		
+		#nav ul {
+			width:396px;
+			height:75px;
+		}
+		
+		#nav ul li a {
+			margin-bottom:2px;
+		}
+		
+		#nav ul li:nth-child(4) a {
+			margin-left:66px;
+		}
+		
+		#hero {
+			width:87%;
+			background-image:none;
+			margin:5px auto;
+			min-height:0;
+		}
+		
+		#hero p {
+			padding-right:0;
+		}
+		
+		#sake {
+			background-position:380px bottom;
+		}
+		
+		#sake p {
+			max-width:340px;
+		}
+		
+		.floatRight, .floatLeft {
+			float:none;
+			display:block;
+			margin:10px auto;
+			max-width:90%;
+		}				
+}
+
+/* Adjustment for form elements on screen widths less than 480px */
+
+
+/* Larger font size for screen widths in the range 500-680px */
+@media screen and (min-width:500px) and (max-width:680px) {
+	#header h1 {
+		font-size:48px;
+		}
+}
+
+
+
+
+
+
+
+

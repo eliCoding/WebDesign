@@ -1,0 +1,172 @@
+@charset "utf-8";
+/* CSS Document */
+/* Script Date: january 13. 2017 */
+#wrapper {
+	width:980px;
+	margin:0 auto;
+	background-color:#B4c4Ba;
+	/*background image will be moved into the desktop.css file*/
+	
+	background-repeat:no-repeat;
+	border-left:1px solid #594431;
+	border-right:1px solid  #594431;
+
+	}
+	
+
+body {
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	background-color: #EEF2EF;
+	margin: 0px;
+	padding: 0px;
+	color:#000;
+}
+h1,h2,h3 {
+	
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	}
+#header h1 {
+	margin:0 0 0.3em 0;
+	padding:25px 0 0 340px;
+	color:rgba(0,0,51,1);
+	font-size:66px;	
+	text-shadow: 3px 3px 3px rbna(0,0,0,0,0.25);	
+	}
+	/*Basic Styles */
+	
+h2,h3 {
+	font-size:26px;
+	color:#003;
+	margin-top:0;
+	-webkit-text-shadow:3px 3px 3px rgba(0,0,0,0,0.25);
+	-ms--text-shadow:3px 3px 3px rgba(0,0,0,0,0.25);
+	-moz--text-shadow:3px 3px 3px rgba(0,0,0,0,0.25);
+	-o-text-shadow:3px 3px 3px rgba(0,0,0,0,0.25);
+		
+	}
+h3 {
+	font-size:22px;
+	
+	}
+a{
+	color:#91784F;
+	font-weight:bold;
+	text-decoration:none;
+	
+	}
+a:hover, a:avtice, a:focus {
+	color:#b59D77;
+	text-decoration:underline;
+	
+	}	
+.floatLeft {
+	float:left;
+	margin:3px 12px 3px 0;
+	
+	}
+.floatRight {
+	float:right;
+	margin:3px 0 3px 12px;
+	
+	}
+.floatLeft, .floatRight {
+	box-shadow:3px 3px 5px #999;
+	}
+/*navigation*/
+#nav ul {
+	list-style-type:none;
+	margin:0 auto 15px 35px;
+	padding:0;
+	font-size:17px;
+	height:35px;
+	
+	}	
+#nav ul li {
+	float:left;
+	margin:0 1px;
+	}
+#nav ul li a {
+	display:block;
+	width:160px;
+	padding:10px;
+	text-align:center;
+	text-decoration:none;
+	color:#fff;
+	background-color:#003;
+	border-radius:12px;
+	box-shadow:2px 2px 3px #999;
+	
+	}
+#nav a:hover,#nav a:active,#nav a:focus {
+	background-color:#26267F;
+		
+	}
+	/* manin content on index page*/
+#main {
+		display:block;
+		background-color:rgba(255,255,255,1);
+		background-repeat:no-repeat;
+		background-position:340px center;
+		width:896px;
+		margin:20px;
+		border:2px solid #003;
+		padding:20px;
+		height:404px;
+		min-height:404px;
+		border-radius:18px;
+		}
+#main h2, #main p {
+	padding-right:600px;
+	
+	}
+#main p {
+		color:#003;
+		font-size:15px;
+		
+		}
+#footer {
+	padding:5px 30px;
+	color:#fff;
+	background-color:#003;
+	clear:both;
+	}
+#footer p {
+	margin:0 0 5px 0;
+	font-size:14px;
+	}	
+/*Content containers on other pages*/ 
+.content-wide, .content-medium, .aside {
+	background-color:#FFF;
+	padding:20px;
+	margin:20px;
+	font-size:14px;
+	border-radius:18px;
+	}
+.content-medium {
+	float:left;
+	width:640px;
+	margin-top:5px;
+	}
+ .aside {
+	margin-left:720px;
+	padding:10px; 
+	 }	
+	 
+	 /*back ground images for individual sections*/
+#dining {
+	background-image:url(../images/chef.jpg);
+	background-repeat:no-repeat;
+	background-position:left top;
+	padding-top:140px;
+	
+	}	 
+	 
+#blossom {
+	background-image: url(../images/cherry_blossom.png);
+	background-repeat: no-repeat;
+	background-position:right top;
+}
+#blossom h3 {
+	padding-right:100px;
+	
+	}

@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link href="styles/parks.css" rel="stylesheet" type="text/css">
+<title>Colorado attraction</title>
+<style type="text/css">
+#col_map {
+	position: absolute;
+	width: 440px;
+	height: 350px;
+	z-index: 1;
+	left: 0px;
+	top: 220px;
+	visibility: visible;
+}
+#northen_colorado {
+	position: absolute;
+	width: 440px;
+	height: 350px;
+	z-index: 2;
+	left: 450px;
+	top: 220px;
+	visibility: hidden;
+}
+#Center_Colorado {
+	position: absolute;
+	width: 440px;
+	height: 350px;
+	z-index: 3;
+	left: 450px;
+	top: 220px;
+	visibility: hidden;
+}
+#Souther_map {
+	position: absolute;
+	width: 440px;
+	height: 350px;
+	z-index: 4;
+	left: 450px;
+	top: 220px;
+	visibility: hidden;
+}
+</style>
+<script type="text/javascript">
+function MM_showHideLayers() { //v9.0
+  var i,p,v,obj,args=MM_showHideLayers.arguments;
+  for (i=0; i<(args.length-2); i+=3) 
+  with (document) if (getElementById && ((obj=getElementById(args[i]))!=null)) { v=args[i+2];
+    if (obj.style) { obj=obj.style; v=(v=='show')?'visible':(v=='hide')?'hidden':v; }
+    obj.visibility=v; }
+}
+</script>
+</head>
+
+<body>
+<div id="col_map" onMouseOut="MM_showHideLayers('col_map','','show','northen_colorado','','hide','Center_Colorado','','hide','Souther_map','','hide')"><img src="images/map2.gif" alt="Colorado map" width="440" height="350" usemap="#Map">
+	<map name="Map">
+		<area shape="rect" coords="8,7,436,131" href="#" alt="Northon Colorado Map" onMouseOver="MM_showHideLayers('col_map','','show','northen_colorado','','show','Center_Colorado','','hide','Souther_map','','hide')">
+		<area shape="rect" coords="8,131,435,241" href="#" alt="Centeral Colorado Map" onMouseOver="MM_showHideLayers('col_map','','show','northen_colorado','','hide','Center_Colorado','','show','Souther_map','','hide')">
+		<area shape="rect" coords="7,241,434,344" href="#" alt="Souther Colorado Map" onMouseOver="MM_showHideLayers('col_map','','show','northen_colorado','','hide','Center_Colorado','','hide','Souther_map','','show')">
+		<area shape="rect" coords="5,127,7,131" href="#">
+	</map>
+</div>
+<div id="northen_colorado"><img src="images/northern.jpg" width="438" height="350" alt="Northon Colorado Attraction"></div>
+<div id="Center_Colorado"><img src="images/central.jpg" width="438" height="350" alt="Centeral Colorado Attraction"></div>
+<div id="Souther_map"><img src="images/southern.jpg" width="437" height="350" alt="Southern Colorado Map"></div>
+<h1 class="centerAlign">Colorado attractions</h1>
+</body>
+</html>

@@ -1,0 +1,50 @@
+@charset "utf-8";
+
+body {
+	background-image: url(../images/parksbg.gif);
+}
+
+.centerAlign {
+	text-align: center;
+}
+
+.leftAlign {
+	text-align: left;
+}
+
+
+.rightAlign {
+	text-align: right;
+}
+
+
+.floatLeft {
+	float: left;
+	margin: 5px;
+}
+
+.floatRight {
+	float: right;
+	margin: 5px;
+}
+
+.clearFloat {
+	float: none;
+}
+ul {
+	list-style-position: inside;
+}
+
+h1 {
+	color: #360;
+	text-shadow: 3px 3px 4px #C9F;
+}
+
+	
+	
+	
+	
+.requierd_filed {
+	font-weight: bold;
+	color: rgb(255,0,0);
+}

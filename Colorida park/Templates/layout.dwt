@@ -1,0 +1,33 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>Untitled Document</title>
+<!-- TemplateEndEditable -->
+<!-- TemplateBeginEditable name="head" -->
+<!-- TemplateEndEditable -->
+<link href="../styles/parks.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<p><img src="../images/logo.gif" width="985" height="102" alt="Colorato national park" />
+</p>
+<h2>Spotlight on[Enter the Name of the national Moniument]</h2>
+<!-- TemplateBeginEditable name="Colorado national Mpnuments" -->Colorado national Monuments<!-- TemplateEndEditable -->
+<p>&nbsp;</p>
+<!-- TemplateBeginEditable name="monument_description" -->
+<p>add short Description of the monuments</p>
+<!-- TemplateEndEditable -->
+<p>&nbsp;</p>
+<!-- TemplateBeginEditable name="monument_images" -->
+<table width="75%" border="1">
+  <tr>
+    <td>Ad additional </td>
+    <td><img name="" src="" width="64" height="32" alt="" /></td>
+  </tr>
+</table>
+<!-- TemplateEndEditable -->
+<p><a href="../index.html">Home</a></p>
+</body>
+</html>

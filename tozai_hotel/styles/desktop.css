@@ -1,0 +1,20 @@
+@charset "utf-8";
+#wrapper {
+	background-image:url(../images/basin_bg.jpg)
+	
+	}
+#main {
+	background-image:url(../images/exterior.jpg);
+	}
+
+#sake {
+	background-image: url(../images/sake.jpg);
+	background-repeat:no-repeat;
+	background-position:bottom;
+	padding-bottom:140px;	
+}
+/* fix double-margin bug in IE 6 and 6*/
+.content-medium {
+	display:inline;
+	
+	}

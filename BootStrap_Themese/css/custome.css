@@ -1,0 +1,14 @@
+@charset "utf-8";
+/* CSS Document */
+.navbar-text > a {
+	
+	text-decoration:none;
+	color:rgba(255,0,102,1);	
+	}
+body {
+	
+	padding-top:70px;
+	padding-bottom:100px;
+	
+	}
+	

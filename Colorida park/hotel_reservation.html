@@ -1,0 +1,150 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Hotle Reservation</title>
+<link href="styles/parks.css" rel="stylesheet" type="text/css">
+<script type="text/javascript">
+function MM_validateForm() { //v4.0
+  if (document.getElementById){
+    var i,p,q,nm,test,num,min,max,errors='',args=MM_validateForm.arguments;
+    for (i=0; i<(args.length-2); i+=3) { test=args[i+2]; val=document.getElementById(args[i]);
+      if (val) { nm=val.name; if ((val=val.value)!="") {
+        if (test.indexOf('isEmail')!=-1) { p=val.indexOf('@');
+          if (p<1 || p==(val.length-1)) errors+='- '+nm+' must contain an e-mail address.\n';
+        } else if (test!='R') { num = parseFloat(val);
+          if (isNaN(val)) errors+='- '+nm+' must contain a number.\n';
+          if (test.indexOf('inRange') != -1) { p=test.indexOf(':');
+            min=test.substring(8,p); max=test.substring(p+1);
+            if (num<min || max<num) errors+='- '+nm+' must contain a number between '+min+' and '+max+'.\n';
+      } } } else if (test.charAt(0) == 'R') errors += '- '+nm+' is required.\n'; }
+    } if (errors) alert('The following error(s) occurred:\n'+errors);
+    document.MM_returnValue = (errors == '');
+} }
+</script>
+</head>
+
+<body>
+<h1>Colorado National Parks </h1>
+<h1>Hotel Reservation Form</h1>
+<p>&nbsp;</p>
+<form action="submit_reservation.html" method="post" name="hotel_reservation" id="hotel_reservation" onSubmit="MM_validateForm('first_name','','R','last_name','','R','address','','R','city','','R','state','','R','zipCode','','RisNum','email','','RisEmail');return document.MM_returnValue">
+  <table width="75%" border="1">
+    <tr>
+      <td width=""><label></label>
+      First Name:&nbsp;
+      <label></label></td>
+      <td><input name="first_name" type="text" id="first_name" size="45" maxlength="50">
+	  <span class="requierd_filed">*</span>
+	  </td>
+    </tr>
+    <tr>
+      <td><label>Last Name:</label>&nbsp;</td>
+      <td><input name="last_name" type="text" id="last_name" size="45" maxlength="50">
+	  <span class="requierd_filed">*</span>
+	  </td>
+    </tr>
+    <tr>
+      <td><label>Address:</label>&nbsp;</td>
+      <td><input name="address" type="text" id="address" size="45" maxlength="50">
+	  <span class="requierd_filed">*</span></td>
+    </tr>
+    <tr>
+      <td><label>City:</label>&nbsp;</td>
+      <td><input name="city" type="text" id="city" size="45" maxlength="50">
+	  <span class="requierd_filed">*</span></td>
+    </tr>
+    <tr>
+      <td><label>State/Zip Code:</label>&nbsp;</td>
+      <td><label for="state">State</label>
+      <input name="state" type="text" id="state" size="2" maxlength="2"><span class="requierd_filed">*</span>  <label for="zipCode">Zip Code</label>
+      <input name="zipCode" type="text" id="zipCode" size="5" maxlength="6"></td>
+	  <span class="requierd_filed">*</span>
+    </tr>
+    <tr>
+      <td><label>
+        Email Address:</label>&nbsp;</td>
+      <td><input type="text" name="email" id="email"><span class="requierd_filed">*</span></td>
+    </tr>
+    <tr>
+      <td><label>Hotels:</label>
+        &nbsp;</td>
+      <td><input name="hotel_01" type="checkbox" id="hotel_01" value="black_canyon">
+      Black Canyon Royale<br>
+      <input name="hotel_02" type="checkbox" id="hotel_02" value="mesa_verdi">
+      Mesa Verdi Pueblo <br>
+      <input name="hotel_03" type="checkbox" id="hotel_03" value="rocky_mountain">
+      Rocky Mountain Station<br>
+      <input name="hotel_04" type="checkbox" id="hotel_04" value="sand_dunes">
+      Sand Dunes Central<br></td>
+    </tr>
+    <tr>
+      <td><label>Accomodation:</label>
+        &nbsp;</td>
+      <td>
+        <select name="accomodation" size="3" multiple id="accomodation">
+          <option value="single " selected>Single</option>
+          <option value="double">Double</option>
+          <option value="suite">Suite</option>
+          <option value="luxury_suite">Luxury Suite</option>
+        </select>
+      </td>
+    </tr>
+    <tr>
+      <td><label>Number of Nights:</label>&nbsp;</td>
+      <td><label>
+        <select name="number_night" id="number_night">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+        </select>
+      </label></td>
+    </tr>
+    <tr>
+      <td><label>Arrival Date:</label>&nbsp;</td>
+      <td><input type="date" id="arrival_date" /></td>
+    </tr>
+    <tr>
+      <td><label>Departure Date:</label>&nbsp;</td>
+      <td><input type="date" id="departure_date" /></td>
+    </tr>
+    <tr>
+      <td><label>Payment Method:</label>&nbsp;</td>
+      <td><p>
+          <label>
+            <input type="radio" name="payment_methods" value="master_card" id="payment_methods_0">
+          Master Card</label>
+          <br>
+          <label>
+            <input type="radio" name="payment_methods" value="visa" id="payment_methods_1">
+            Visa</label>
+          <br>
+          <label>
+            <input type="radio" name="payment_methods" value="amex" id="payment_methods_2">
+            AmEx</label>
+          <br>
+      </p></td>
+    </tr>
+    <tr>
+      <td><label>Parks to Visit:</label>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td><label>Comments:</label>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td colspan="2">
+      <input type="submit" name="Submit Hotel Reservation" id="Submit Hotel Reservation" value="Submit">
+      <input type="reset" name="Reset Form" id="Reset Form" value="Reset Form"></td>
+    </tr>
+  </table>
+</form>
+<p class="requierd_filed">All fields with red Asterisk must be completed.</p>
+<p><a href="index.html">Home</a></p>
+</body>
+</html>

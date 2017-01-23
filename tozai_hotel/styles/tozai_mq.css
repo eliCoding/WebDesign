@@ -1,0 +1,8 @@
+/*Basic style*/
+@import url("tozai.css");
+/* Phone Devices */
+@import url("phone.css") only screen and (max-width:400px);
+/* Tablet Devices */
+@import url("tablet.css") only screen and (min-width:401px) and (max-width:768px);
+/* Desktop Devices */
+@import url("desktop.css") only screen and (min-width:769px);
